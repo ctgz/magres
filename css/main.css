@@ -1,0 +1,709 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+    box-sizing:border-box
+}
+
+    body::-webkit-scrollbar {
+        width: 7px;
+    }
+      
+    body::-webkit-scrollbar-thumb:hover {
+        background-color: #dbb460;
+    }
+      
+    body::-webkit-scrollbar-thumb {
+        background: #dbb460;
+        border-radius: 5px;
+    }
+
+    /*Header*/
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        top: 0;
+        width: 100%;
+        font-family: 'Handlee', cursive;
+        font-size: 22px;
+        letter-spacing: 0.2vh;
+        background: linear-gradient(#a1710973,#f1daaa3f ,#fff7e53a);
+    }
+    
+    #burger-menu-button{
+        display: none;
+    }
+
+    .menu{
+        width: 90%;
+        display: block;
+    }
+
+    #main-menu{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        color:rgb(132, 51, 148);
+        transition: color 0.5s ease-in-out;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    .logo{
+        max-width: 120px;
+        height: 120px;
+        margin-top: 1.5vw;
+    }
+
+    .img-logo{
+        width: 100%;
+        
+    }
+
+    .info{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 8%;
+        padding: 3%;
+        font-family: 'Comfortaa', cursive;
+        text-align: center;
+
+    }
+
+        /*Slide*/
+        .slideshow-container {
+            max-width: 80%;
+            height: 80%;
+            position: relative;
+            margin: 11%;
+      }
+      
+     
+        /* Next & previous botones */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+      }
+      
+      /* Posición de botón next */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+      
+        .prev:hover, .next:hover {
+            background-color: rgba(235, 197, 92, 0.8);
+        }
+      
+      /* Caption text */
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+      
+      /* Texto numero (1/2 ) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+            font-family: 'Comfortaa', cursive;
+        }
+      
+      /* Indicadores dots */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition:  0.6s ease;
+        }
+      
+            .dot:hover {
+            background-color: #717171;
+        }
+      
+      /* Fading animation */
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+        
+        @-webkit-keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+        }
+      
+        @keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+        }
+    
+        .menu-item :hover{
+            border-top:1px solid #651b74;
+            border-bottom:1px solid #651b74;
+            transition: color 0.5s ease-in-out;
+            color:#dbb460;
+        }
+
+        .menu-item :link,
+        .item-link :link{
+            color:rgb(129, 13, 104);
+        }
+
+        a[href^="mailto:"]{
+            color:#651b74;
+        }
+
+    
+        div .info-emoji{
+            display: block;
+            float: left;
+            margin: 5%;
+            border-right:rgb(89, 22, 102) 10px;
+        }
+
+    /*Footer*/
+    .infoFooter{
+        background: rgb(250, 231, 148);
+        width: 100%;
+        position: absolute;
+        font-family: 'Comfortaa', cursive;
+        color:rgb(89, 22, 102);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 2%;
+    }
+
+    .infoFooter ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        font-size: 22px;
+    }
+
+
+    .newsletter{
+        height: 1.5vw;
+        border-radius: 3px;
+        font-family: 'Comfortaa', cursive;
+    }
+
+    .redes li,
+    .contact-footer li,
+    .categorias li{
+        font-size: 0.8vw;
+    }
+    /*ponerle color al mailto*/
+    
+     /*Página de About*/
+    .about-magres{
+        color: rgb(89, 22, 102);
+        font-family: 'Comfortaa', cursive;
+    }
+
+    .about-magres main{
+        text-align: center;
+        margin-top: 10%;
+    }
+
+    .about-magres p{
+        padding: 4.5vw;
+        font-size: 26px;
+    }
+
+    #p1{
+        font-size: 42px;
+        font-weight: bold;
+    }
+
+
+    /*Página de Productos*/
+    .product-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        display: flex;
+        margin: 4%;
+    }
+
+    .cont-prod-foto h3{
+        font-size: 28px;
+        color:#651b74;
+        text-align: center;
+    }
+
+    .cont-prod-foto{
+        margin: 2%;
+    }
+
+
+    .foto-prod{
+        width: 300px;
+        height: 300px;
+        z-index: 3;
+        position: relative;
+        left: 120px;
+        border-radius: 2%;
+        scroll-behavior: smooth;
+        cursor: pointer;
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 0.5s;
+        opacity: 0.9;
+    }
+
+    #zoom{
+        transition: 1.5s ease;
+        -webkit-transition: 1.5s ease;
+    }
+
+    #zoom:hover{
+        transform : scale(1.5);
+		-webkit-transform : scale(1.5);
+    }
+
+    .foto-prod-tried{
+        position: relative;
+        width: 500px;
+        height: 500px;
+        border-radius: 2%;
+        scroll-behavior: smooth;
+        cursor: pointer;
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.8s;
+        
+    }
+
+    .product-container p{
+        font-family: 'Comfortaa', cursive;
+        color:#651b74;
+        text-align: center;
+    }
+
+    
+
+    /*Página de Contacto*/
+    form,
+    .form,
+    .info-contacto,
+    label,
+    #title-contact{
+        font-family: 'Comfortaa', cursive;
+        color: rgb(89, 22, 102);
+    }
+
+    form label{
+        display: block;
+    }
+   
+    .contact{
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       margin-top: 8%;
+       margin-bottom: 8%;
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    
+    #mapa-contacto{
+        border-radius: 7px;
+
+    }
+    .info-contacto{
+        width: 35%;
+        display: block;
+        margin:auto;
+        font-size: 15px;
+    }
+
+    .info-contacto p{
+        margin-top: 3%;
+        text-align: justify;
+    }
+
+    #title-contact,
+    .form{
+        margin-bottom: 2%;
+    }
+
+    form{
+        width: 50%;
+        height: 85%;
+    }
+      
+      form input[type="text"],
+      form input[type="number"],
+      form input[type="email"]{
+        font-family: 'Comfortaa', cursive;
+        width: 50vh;
+        height: 4vh;
+        border:1px solid rgb(225, 181, 238); 
+        border-radius:3px;
+        background-color:#fffcf4;
+        display: block;
+        margin-bottom: 1.5%;
+      }
+      
+      textarea{
+        font-family: 'Comfortaa', cursive;
+        margin-top: 1%;
+        width:50vh;
+        height:34%;
+        border:1px solid rgb(225, 181, 238);
+        border-radius:3px;
+        background-color:#fffcf4;
+        display:block;
+      }
+      
+      form input[type="submit"]{
+        width:20%;
+        padding:10px 20px;
+        border:3px solid rgb(9, 27, 13);
+        border-radius:5px;
+        display: relative;
+        color:rgb(253, 228, 207);
+        background-color:rgb(9, 27, 13);
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 12%;
+      } 
+      
+      form input[type="submit"]:hover{
+        cursor:pointer;
+      }
+
+      h3{
+        font-family: 'Handlee', cursive;
+        font-size: 1.3vw;
+      }
+    
+    /*Página formulario*/
+    #form-ok{
+        margin-top: 27%;
+        margin-bottom: 27%;
+        text-align: center;
+        font-size: 35px;
+        font-family: 'Handlee', cursive;
+        color: rgb(89, 22, 102);
+    }
+
+/*MENU MOBILE*/
+@media (max-width: 700px){
+    #burger-menu-button{
+        background: transparent;
+        border: 0;
+        outline: 0;
+        color: rgb(93, 5, 110);
+        font-size: 10px;
+        cursor: pointer;
+        display: block;
+    }
+
+
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .mobile-menu-active .menu{
+        display: block;
+    }
+
+    .mobile-menu-active #main-menu{
+        font-size: 16px;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-evenly;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 0;
+        padding-left: 5%;
+        width: 30vw;
+        height: 100%;
+        z-index: 2;
+        background-color:rgba(250, 231, 148, 0.856);
+    }
+
+    #open-mobile-menu{
+        font-size: 4vw;
+        color:rgba(228, 189, 80, 0.897);
+        position: absolute;
+        z-index: 1;
+        left: 30px;
+        top: 50px;
+
+    }
+
+    .mobile-menu-active{
+        overflow: hidden;
+    }
+
+
+    .mobile-menu-active #close-mobile-menu{
+        display: block;
+        font-size: 4vw;
+        color:#651b74;
+        position: absolute;
+        z-index: 3;
+        left: 30px;
+        top: 50px;
+    }
+    
+    #close-mobile-menu{
+        display: none;
+    }
+
+
+
+
+    .img-logo{
+        width: 75px;
+        height: 75px;
+        margin-top: 1.5vw;
+        margin-bottom: 1.5vw;
+        display: inline-block;
+    }
+
+    .dot{
+        height: 6.5px;
+        width: 6.5px;
+    }
+
+    .info{
+        font-size: 2.1vw;
+        text-align: center;
+    }
+
+    .info-contacto{
+        margin-bottom: 10%;
+        width: 70%;
+    }
+    .info-contacto p{
+        font-size: 3.5vw;
+        text-align: center;
+    }
+    .contact{
+        display: block;
+    }
+
+    #title-contact{
+        text-align: center;
+        font-size: 4.5vw;
+    }
+
+    .categoria-container li{
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .categoria-container h3{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .categoria-container{
+        line-height: 20px;
+        padding: 3%;
+    }
+
+    .info{
+        display: flex;
+        flex-direction: column;
+        font-size: 2.5vw;
+        margin: 15%;
+        padding: 2.5%;
+    }
+
+    .info-emoji{
+        margin: 7%;
+        font-size: 4.5vw;
+        color:rgb(93, 5, 110);
+    }
+
+    .newsletter{
+        width: 130px;
+        height: 20px;
+        font-size: 12px;
+        margin-left: 30%;
+    }
+
+    .infoFooter{
+        display: flex;
+        flex-direction: column;
+        padding: 4%;
+        letter-spacing: 0.5px;
+    }
+
+    /*about mobile*/
+    .about-magres{
+        color: rgb(89, 22, 102);
+        font-family: 'Comfortaa', cursive;
+        text-align: center;
+    }
+
+    .about-magres p{
+        padding: 10vw;
+        font-size: 17px;
+    }
+
+    #p1{
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+
+    /*product mobile*/
+    .product-container{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .cont-prod-foto h3{
+        font-size: 6.5vw;
+    }
+
+    .cont-prod-foto p{
+        font-size: 3vw;
+    }
+
+    .foto-prod{
+        width: 140px;
+        height: 150px;
+        z-index: 3;
+        top: 70px;
+        right: 44px;
+    }
+
+
+    .foto-prod-tried{
+        width: 250px;
+        height: 300px;
+        border-radius: 2px;
+        border-radius: 5px;
+    }
+
+    /*contact mobile*/
+    .contact{
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+    form{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .form{
+        text-align: center;
+        margin-top: 1.5%;
+        font-size: 3vw;
+        padding: 2%;
+        margin-top: 4%;
+    }
+
+
+    form label{
+        display: block;
+    }
+
+    #mapa-contacto{
+        display: block;
+        width: 200px;
+        height: 100px;
+        margin-left: 10%;
+    }
+
+    form input[type="text"],
+    form input[type="number"],
+    form input[type="email"]{
+        width: 65vw;
+        height: 7vw;
+        border:1px solid rgb(225, 181, 238); 
+        border-radius:3px;
+    }
+
+    textarea {
+        width: 85%;
+        height: 44%;
+    }
+
+    form input[type="submit"]{
+        margin: 10%;
+        width: 35%;
+    }
+
+    .info-contacto p{
+        margin-bottom: 2%;
+    }
+
+    .info-contacto a[href^="mailto:"]{
+       font-size: 3.5vw;
+    }
+
+    .info-contacto .item-link{
+        font-size: 3.5vw;
+        text-align: center;
+        margin-left: 12%;
+        color:#651b74;
+    }
+
+
+}
+
+
