@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="img/logo2.png" sizes="any">
+    <link rel="stylesheet" type=text/css href="css/main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+
+
+    <title>Magre's Tienda</title>
+</head>
+
+
+<body>
+    <header>
+        <a class="logo" href="index.html">
+            <img src="img/logo2.png" alt="Magre's Logo" class="img-logo">
+        </a>
+
+        <button id="burger-menu-button">
+            <i class="fas fa-bars" id="open-mobile-menu"></i>
+            <i class="fas fa-times" id="close-mobile-menu"></i>
+        </button>
+
+        <nav class="menu">
+            <ul id="main-menu">
+                <li class="menu-item active">
+                    <a href="index.html"> Inicio </a>
+                </li>
+                <li class="menu-item">
+                    <a href="about.html"> Sobre Magre's </a>
+                </li>
+                <li class="menu-item">
+                    <a href="productos.html"> Nuestros Productos </a>
+                </li>
+                <li class="menu-item">
+                    <a href="contacto.html"> Contacto </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article class="contact">
+            <section class="info-contacto">
+                <p>
+                    Podes dejarnos tu mensaje con tu consulta por Whatsapp o por nuestras redes sociales
+                </p>
+                <p>
+                    📍Retiros en Almagro
+                </p>
+                <iframe id="mapa-contacto"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26270.188417430658!2d-58.44013606171399!3d-34.60988724928617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca5e41da17ff%3A0xebce9fad2698f23f!2sAlmagro%2C%20CABA!5e0!3m2!1ses!2sar!4v1627619877521!5m2!1ses!2sar"
+                    width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <p>
+                    &#128231 <a href="mailto:magresvirtual@gmail.com">magresvirtual@gmail.com</a>
+                </p>
+                <a class="item-link" href="https://walink.co/6221ba" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    Whatsapp
+                </a>
+
+            </section>
+            <form action="form.php" method="post">
+                <h2 id="title-contact">
+                    Comunicate con Magre's
+                </h2>
+                <p class="form">Por consultas o información, dejanos tu mensaje</p>
+
+                <label for="nombre">NOMBRE</label>
+                <input type="text" name="Nombre" placeholder="Escribe tu nombre..." required></input>
+
+                <label for="apellido">APELLIDO</label>
+                <input type="text" name="Apellido" placeholder="Escribe tu apellido..." required></input>
+
+                <label for="telefono">TELÉFONO</label>
+                <input type="number" name="Telefono" placeholder="Escribe tu teléfono.." required></input>
+
+                <label for="email">E-MAIL</label>
+                <input type="text" name="Email" placeholder="ejemplo@mail.com" required></input>
+
+                <label for="mensaje">MENSAJE</label>
+                <textarea name="mensaje" id="mensaje" rows="4" cols="22" maxlength="3000"
+                    placeholder="Escribe tu mensaje..."></textarea>
+
+                <input type="submit" value="ENVIAR" name="Submit">
+            </form>
+        </article>
+    </main>
+
+    <!--Footer-->
+    <footer class="footer">
+        <article class="infoFooter">
+            <section class="categoria-container">
+                <h3>Categorías</h3>
+                <ul class="categorias">
+                    <li class="menu-item">
+                        <a href="index.html"> Inicio </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="about.html"> Sobre Magre's </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="productos.html"> Nuestros Productos </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="contacto.html"> Contacto </a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="categoria-container">
+                <h3>Contactanos</h3>
+                <ul class="contact-footer">
+                    <li class="item-link">
+                        <a href="https://walink.co/6221ba" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            Whatsapp
+                        </a>
+                    </li>
+                    <li class="item-link">
+                        <i class="fas fa-envelope-open-text"></i>
+                        <a href="mailto:magresvirtual@gmail.com">magresvirtual@gmail.com</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        Retiros en Almagro
+                    </li>
+                </ul>
+            </section>
+
+            <section class="categoria-container">
+                <h3>Redes sociales</h3>
+                <ul class="redes">
+                    <li class="item-link">
+                        <a href="https://www.instagram.com/magrestienda/" target="_blank"> Instagram
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li class="item-link">
+                    <li class="item-link">
+                        <a href="https://www.facebook.com/Magres-Tienda-102146218659877" target="_blank"> Facebook
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="categoria-container">
+                <h3>Newsletter</h3>
+                <input type="text" class="newsletter" name="email" placeholder="Escribe tu email.." required></input>
+                <a href="#news">
+                    <i class="fas fa-location-arrow"></i>
+                </a>
+            </section>
+        </article>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
